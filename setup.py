@@ -8,8 +8,8 @@ setuptools.setup(
     packages=['demo_nova_hooks'],
     entry_points={
         'nova.hooks': [
-            'create_instance=demo_nova_hooks.simple.SimpleHookCreate',
-            'delete_instance=demo_nova_hooks.simple.SimpleHookDelete',
+            'create_instance=demo_nova_hooks.simple:SimpleHookCreate',
+            'delete_instance=demo_nova_hooks.simple:SimpleHookDelete',
         ]
     },
 )
