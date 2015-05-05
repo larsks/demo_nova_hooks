@@ -9,6 +9,7 @@ setuptools.setup(
     entry_points={
         'nova.hooks': [
             'create_instance=demo_nova_hooks.simple:SimpleHookCreate',
+            'instance_network_info=demo_nova_hooks.simple:SimpleHookNetwork',
             'delete_instance=demo_nova_hooks.simple:SimpleHookDelete',
         ]
     },
